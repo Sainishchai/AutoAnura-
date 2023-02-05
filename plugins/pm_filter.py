@@ -431,8 +431,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🔥 SΞΛᏒCH HΞᏒΞ 🔥', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/sai_movies_backup'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sai_movies27')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/sai_movies_update'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/sai_movies_backup')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
