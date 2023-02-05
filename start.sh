@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /AutoAnura-
 fi
-cd /AutoAnura-1
+cd /AutoAnura-
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
