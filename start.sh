@@ -1,10 +1,10 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Sainishchai/AutoAnura-1 /AutoAnura-1
+  git clone https://github.com/Sainishchai/AutoAnura- /AutoAnura-
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /AutoAnura-1
+  git clone $UPSTREAM_REPO /AutoAnura-
 fi
 cd /AutoAnura-1
 pip3 install -U -r requirements.txt
