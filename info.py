@@ -17,8 +17,8 @@ API_HASH = environ.get('API_HASH', '9544a3ad7d8660acbae0dcf553c808e5')
 BOT_TOKEN = environ.get('BOT_TOKEN', '5877942822:AAHNf46r8fFlnlmzbjdjfihuSIYK4UMdOmk')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+CACHE_TIME = int(environ.get('CACHE_TIME', 200))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/825eb0b9b48f4332e5271.jpg https://telegra.ph/file/b958949b16be1f0dd01a6.jpg https://telegra.ph/file/fe666659e64576db72b06.jpg https://telegra.ph/file/7d204c124a17df7e223fc.jpg https://telegra.ph/file/54ac56480944b69813426.png https://telegra.ph/file/5de1e88e4e322c81fe26f.jpg https://telegra.ph/file/8450338748ac577a7cdc5.jpg https://telegra.ph/file/e242c4a1af8f9b0a55164.jpg')).split()
 
 # Admins, Channels & Users
@@ -48,7 +48,7 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🏷 𝖳𝗂𝗍𝗅𝖾: <a href
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', AUTH_CHANNEL))
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001851923122')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), True)
